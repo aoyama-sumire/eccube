@@ -1,0 +1,6 @@
+58ebac,::1,POST,http://localhost/ec-cube/kanri/content/cache,1650441177,,200
+2be3a7,::1,GET,http://localhost/ec-cube/products/detail/1,1650441210,a37337,500
+a37337,::1,GET,http://localhost/ec-cube/products/detail/1,1650441213,,500
+2ae755,::1,GET,http://localhost/ec-cube/block/search_product,1650441230,ad51f6,200
+a83126,::1,GET,http://localhost/ec-cube/block/search_product,1650441231,ad51f6,200
+ad51f6,::1,GET,http://localhost/ec-cube/products/detail/1,1650441231,,200
