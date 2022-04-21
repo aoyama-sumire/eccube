@@ -624,6 +624,7 @@ admin.product.permanently_delete__complete: 完了
 admin.product.permanently_delete__system_error: システムエラーが発生しました
 admin.product.copy__confirm_title: 商品を複製します
 admin.product.copy__confirm_message: 商品を複製してよろしいですか？
+admin.product.subtitle: サブタイトル
 admin.product.name: 商品名
 admin.product.image: 商品画像
 admin.product.image__short: 画像

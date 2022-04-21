@@ -28,6 +28,8 @@ if (!class_exists('\Eccube\Entity\Product')) {
      */
     class Product extends \Eccube\Entity\AbstractEntity
     {
+    use \Customize\Entity\ProductTrait;
+    
         private $_calc = false;
         private $stockFinds = [];
         private $stocks = [];
