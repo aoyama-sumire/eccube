@@ -73,12 +73,6 @@ class ProductType extends AbstractType
             ->add('class', ProductClassType::class, [
                 'mapped' => false,
             ])
-            // 基本情報
-            ->add('subtitle', TextType::class, [
-                'constraints' => [
-                    new Assert\Length(['max' => $this->eccubeConfig['eccube_stext_len']]),
-                ],
-            ])
             ->add('name', TextType::class, [
                 'constraints' => [
                     new Assert\NotBlank(),
@@ -117,7 +111,7 @@ class ProductType extends AbstractType
                 'class' => 'Eccube\Entity\Tag',
                 'query_builder' => function ($er) {
                     return $er->createQueryBuilder('t')
-                    ->orderBy('t.sort_no', 'DESC');
+                        ->orderBy('t.sort_no', 'DESC');
                 },
                 'required' => false,
                 'multiple' => true,
@@ -183,8 +177,7 @@ class ProductType extends AbstractType
             ])
             ->add('return_link', HiddenType::class, [
                 'mapped' => false,
-            ])
-        ;
+            ]);
 
         $builder->addEventListener(FormEvents::POST_SUBMIT, function (FormEvent $event) {
             /** @var FormInterface $form */
@@ -206,7 +199,7 @@ class ProductType extends AbstractType
     {
         foreach ($form->getData() as $fileName) {
             $fileInDir = array_filter($dirs, function ($dir) use ($fileName) {
-                $filePath = realpath($dir.'/'.$fileName);
+                $filePath = realpath($dir . '/' . $fileName);
                 $topDirPath = realpath($dir);
 
                 return strpos($filePath, $topDirPath) === 0 && $filePath !== $topDirPath;

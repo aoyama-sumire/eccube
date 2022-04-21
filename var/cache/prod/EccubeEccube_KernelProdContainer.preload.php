@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).''.\DIRECTORY_SEPARATOR.'vendor/autoload.php';
-require __DIR__.'/ContainerSfxxmAL/EccubeEccube_KernelProdContainer.php';
+require __DIR__.'/ContainerL1vurjG/EccubeEccube_KernelProdContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -606,6 +606,8 @@ $classes[] = 'SunCat\MobileDetectBundle\EventListener\RequestResponseListener';
 $classes[] = 'Monolog\Handler\FingersCrossedHandler';
 $classes[] = 'Monolog\Handler\RotatingFileHandler';
 $classes[] = 'Symfony\Bridge\Monolog\Handler\ConsoleHandler';
+$classes[] = 'Monolog\Handler\FilterHandler';
+$classes[] = 'Monolog\Handler\NullHandler';
 $classes[] = 'Monolog\Processor\PsrLogMessageProcessor';
 $classes[] = 'Nyholm\Psr7\Factory\Psr17Factory';
 $classes[] = 'Symfony\Component\HttpFoundation\RequestStack';
