@@ -2334,6 +2334,298 @@
             "time": "2019-10-24T07:13:31+00:00"
         },
         {
+            "name": "ec-cube/api",
+            "version": "2.1.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/api/2.1.3/Api-2.1.3.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.6 || ^2.0",
+                "nyholm/psr7": "^1.2",
+                "trikoder/oauth2-bundle": "^2.1",
+                "webonyx/graphql-php": "^14.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "Api",
+                "entity-namespaces": [
+                    "Trikoder\\Bundle\\OAuth2Bundle\\Model"
+                ],
+                "id": 2121
+            },
+            "description": "Web API",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/coupon4",
+            "version": "4.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/coupon4/4.1.1/Coupon4-4.1.1.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.4 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "Coupon4",
+                "id": 1923
+            },
+            "description": "Coupon Plugin for EC-CUBE4",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/gmc",
+            "version": "1.1.5",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/gmc/1.1.5/GMC-1.1.5.tgz"
+            },
+            "require": {
+                "ec-cube/api": "~1.0 || ~2.1",
+                "ec-cube/plugin-installer": "~0.0.7 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "GMC",
+                "id": 2144
+            },
+            "description": "Google Merchant Center",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/mailmagazine4",
+            "version": "4.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/mailmagazine4/4.1.2/MailMagazine4-4.1.2.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.6 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "MailMagazine4",
+                "id": 1760
+            },
+            "description": "メールマガジンプラグイン",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/plugin-installer",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EC-CUBE/eccube-plugin-installer.git",
+                "reference": "2cb574d0fda477af98b6199ddcb99e1a2c7e228a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EC-CUBE/eccube-plugin-installer/zipball/2cb574d0fda477af98b6199ddcb99e1a2c7e228a",
+                "reference": "2cb574d0fda477af98b6199ddcb99e1a2c7e228a",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Eccube\\Composer\\EccubePluginInstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "Eccube": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "EC-CUBE plugin installer.",
+            "support": {
+                "source": "https://github.com/EC-CUBE/eccube-plugin-installer/tree/2.0.1"
+            },
+            "time": "2021-07-20T01:13:11+00:00"
+        },
+        {
+            "name": "ec-cube/productreview4",
+            "version": "4.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/productreview4/4.1.0/ProductReview4-4.1.0.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.6 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "ProductReview4",
+                "id": 1756
+            },
+            "description": "商品レビュー管理プラグイン",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/recommend4",
+            "version": "4.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/recommend4/4.1.0/Recommend4-4.1.0.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.6 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "Recommend4",
+                "id": 1757
+            },
+            "description": "おすすめ商品管理プラグイン",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/relatedproduct4",
+            "version": "4.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/relatedproduct4/4.1.0/RelatedProduct4-4.1.0.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.6 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "RelatedProduct4",
+                "id": 1761
+            },
+            "description": "関連商品プラグイン",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/salesreport4",
+            "version": "4.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/salesreport4/4.1.0/SalesReport4-4.1.0.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.6 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "SalesReport4",
+                "id": 1759
+            },
+            "description": "売上集計プラグイン",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/securitychecker4",
+            "version": "4.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/securitychecker4/4.1.1/Securitychecker4-4.1.1.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.8 || ^2.0"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "Securitychecker4",
+                "id": 2040
+            },
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "EC-CUBE CO.,LTD.",
+                    "email": "support@ec-cube.net"
+                }
+            ],
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ec-cube/sitekit",
+            "version": "1.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://package-api-c2.ec-cube.net/ec-cube/sitekit/1.1.2/SiteKit-1.1.2.tgz"
+            },
+            "require": {
+                "ec-cube/plugin-installer": "~0.0.7 || ^2.0",
+                "google/apiclient": "^2.4"
+            },
+            "type": "eccube-plugin",
+            "extra": {
+                "code": "SiteKit",
+                "id": 2158
+            },
+            "description": "Site Kit プラグイン",
+            "transport-options": {
+                "http": {
+                    "header": [
+                        "X-ECCUBE-KEY: "
+                    ]
+                }
+            }
+        },
+        {
             "name": "egulias/email-validator",
             "version": "2.1.25",
             "source": {

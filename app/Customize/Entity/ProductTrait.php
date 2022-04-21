@@ -4,6 +4,8 @@ namespace Customize\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Annotation\EntityExtension;
+use Eccube\Annotation\FormAppend;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @EntityExtension("Eccube\Entity\Product")
@@ -14,6 +16,9 @@ Trait ProductTrait
      * @var string
      *
      * @ORM\Column(name="subtitle", type="string", length=255)
+     * @FormAppend
+     * @Assert\Length(max = 255)
+     * 
      */
     private $subtitle;
 
